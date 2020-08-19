@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  front:
+    command: ["npm", "run", "build"]
+    volumes:
+      - ./volumes/front/build:/app/build
+    environment:
+      CI: "false"
+
+  nginx:
+    volumes:
+      - ./volumes/front/build:/www/cars/tradersclub/build
+      - ./config/nginx/nginx.conf.staging:/etc/nginx/nginx.conf.template

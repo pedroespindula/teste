@@ -1,0 +1,19 @@
+services:
+  nginx:
+    image: pedroespindula/letsencrypt-envsubst
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: America/Recife
+      URL: $BASE_URL
+      SUBDOMAINS: api,calendar,totem,www
+      VALIDATION: http
+      EMAIL: joaopedro.jpse@gmail.com
+    volumes:
+      - ./config/nginx/nginx.conf.production:/config/nginx/nginx.conf.template
+      - ./config/nginx/run-production.sh:/run.sh
+      - ./volumes/nginx/config:/config
+

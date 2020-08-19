@@ -1,0 +1,14 @@
+events {}
+http {
+  include       /etc/nginx/mime.types;
+
+  server {
+    listen          80;
+    server_name     ${BASE_URL};
+    root /www/cars/tradersclub/build;
+    index index.html index.htm;
+    location / {
+      try_files ${DOLLAR}uri /index.html =404;
+    }
+  }
+}
