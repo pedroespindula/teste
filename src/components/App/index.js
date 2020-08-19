@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import '../../assets/styles/Shared.css';
 
-export default class App extends Component {
-    render() {
-        return (
-            <h1>Teste do Tradersclub</h1>
-        );
-    }
-}
+const App = () => (
+  <h1>Teste do Tradersclub</h1>
+);
+
+export default App;
