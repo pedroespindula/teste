@@ -11,7 +11,6 @@ services:
       PGID: 1000
       TZ: America/Recife
       URL: $BASE_URL
-      SUBDOMAINS: api,calendar,totem,www
       VALIDATION: http
       EMAIL: joaopedro.jpse@gmail.com
     volumes:
