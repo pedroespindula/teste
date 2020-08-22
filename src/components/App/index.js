@@ -12,15 +12,17 @@ import VehicleList from "../../views/Vehicle/List";
 import "./index.css";
 
 const App = () => (
-  <Router className="app">
+  <Router>
     <Menu />
     <SearchBar />
-    <Switch>
-      <Route path="/" exact={true} component={Banner} />
-      <Route path="/vehicle" exact={true} component={VehicleList} />
-      <Route path="/vehicle/create" exact={true} component={Vehicle} />
-      <Route path="/vehicle/:id" component={Vehicle} />
-    </Switch>
+    <main>
+      <Switch>
+        <Route path="/" exact={true} component={Banner} />
+        <Route path="/vehicle" exact={true} component={VehicleList} />
+        <Route path="/vehicle/create" exact={true} component={Vehicle} />
+        <Route path="/vehicle/:id" component={Vehicle} />
+      </Switch>
+    </main>
   </Router>
 );
 

@@ -1,22 +1,22 @@
-.app {
+#root {
   height: 100%;
   width: 100%;
-  /* display: grid; */
-  /* grid-template-columns: 1fr auto; */
-  /* grid-template-rows: 1fr auto; */
-  /* grid-template-areas: */
-  /*   "menu searchbar" */
-  /*   "menu banner"; */
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content auto;
+  grid-template-areas:
+    "menu searchbar"
+    "menu banner";
 }
 
-.app .menu {
+#root .menu {
   grid-area: menu;
 }
 
-.app .searchbar {
+#root .searchbar {
   grid-area: searchbar;
 }
 
-.app .banner {
+#root main {
   grid-area: banner;
 }

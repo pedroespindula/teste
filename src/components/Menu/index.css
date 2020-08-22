@@ -1,5 +1,11 @@
 .menu {
   background-color: #0e1823;
-  min-width: 10rem;
+  min-width: 20vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
 }
 
+.menu img {
+  height: 8rem;
+}

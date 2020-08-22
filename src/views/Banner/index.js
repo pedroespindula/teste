@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import './index.css'
+import "./index.css";
 
 const Banner = () => (
-  <div className='banner'>
-    <h1>Pesquisa de veículos do <span>TradersClub</span></h1>
-  </div>
+  <h1 className="banner">
+    Pesquisa de veículos do <span>TradersClub</span>
+  </h1>
 );
 
 export default Banner;
