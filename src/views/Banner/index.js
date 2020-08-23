@@ -4,7 +4,8 @@ import "./index.css";
 
 const Banner = () => (
   <h1 className="banner">
-    Pesquisa de veículos do <span>TradersClub</span>
+    Pesquisa de veículos <br/>
+    do <span>TradersClub</span>
   </h1>
 );
 
