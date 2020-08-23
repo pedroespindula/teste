@@ -17,6 +17,7 @@ const SearchBar = () => {
       <input
         onChange={e => setSearch(e.target.value)}
         onKeyDown={handleKeyDown}
+        placeholder="Pesquise por um veículo"
       />
       <button onClick={() => history.push("/vehicle/create")}>Cadastrar</button>
     </div>
