@@ -14,7 +14,7 @@ const FormActions = ({ actions, submit }) => {
       {actions.map(a => (
         <Action action={a} key={a.name} />
       ))}
-      <button onClick={submit.handleClick}>{submit.name}</button>
+      <button className="submit" onClick={submit.handleClick}>{submit.name}</button>
     </div>
   );
 };
