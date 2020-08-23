@@ -15,11 +15,11 @@ const Field = ({ field, setField }) => {
 
 const FormFields = ({ fields, setField }) => {
   return (
-    <div>
+    <fieldset>
       {fields.map(f => (
         <Field field={f} setField={setField} key={f.params.name} />
       ))}
-    </div>
+    </fieldset>
   );
 };
 
