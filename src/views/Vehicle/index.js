@@ -12,11 +12,11 @@ const Vehicle = ({ match }) => {
   const [fieldsValues, setFieldValue] = useState({
     title: "",
     model: "",
-    year: 0,
+    year: undefined,
     brand: "",
     color: "",
-    price: 0,
-    km: 0
+    price: undefined,
+    km: undefined,
   });
 
   const updateBrands = async () => {
