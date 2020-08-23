@@ -61,7 +61,7 @@ export const carApi = {
     const search = params.get("search");
 
     const result = search
-      ? CARS.filter(c => c.title.toLowerCase().includes(search))
+      ? CARS.filter(c => c.title.toLowerCase().includes(search.toLowerCase()))
       : CARS;
 
     return Promise.resolve({ data: result });
