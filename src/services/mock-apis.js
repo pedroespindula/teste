@@ -67,7 +67,7 @@ export const carApi = {
     return Promise.resolve({ data: result });
   },
   get: function (id) {
-    return Promise.resolve({ data: CARS[id] });
+    return Promise.resolve({ data: CARS[id - 1] });
   },
   post: function (car) {
     return Promise.resolve({ data: car });
