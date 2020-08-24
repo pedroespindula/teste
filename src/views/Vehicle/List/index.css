@@ -1,0 +1,28 @@
+.vehicle--list {
+  padding: 2rem 1rem;
+}
+
+.vehicle--container {
+  margin: 0 2rem;
+  list-style-type: none;
+}
+
+.vehicle--container:hover {
+  background-color: var(--dark-background-color);
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+hr {
+  border: 1px solid #495461;
+}

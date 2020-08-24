@@ -1,10 +1,12 @@
 import React, { useEffect, useCallback, useState } from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import Vehicle from "../../../components/Vehicle";
 
 import { carApi } from "../../../services/mock-apis";
+
+import "./index.css";
 
 const VehicleList = ({ location }) => {
   const [vehicles, setVehicles] = useState([]);
@@ -20,11 +22,12 @@ const VehicleList = ({ location }) => {
   }, [updateVehicles]);
 
   return (
-    <ul>
+    <ul className="vehicle--list">
       {vehicles.map(v => (
         <Link to={`/vehicle/${v.id}`} key={v.id}>
-          <li>
+          <li className="vehicle--container">
             <Vehicle vehicle={v} />
+            <hr />
           </li>
         </Link>
       ))}

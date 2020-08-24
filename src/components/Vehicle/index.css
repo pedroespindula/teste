@@ -1,0 +1,25 @@
+.vehicle {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "title price"
+    "details year";
+  grid-gap: 0.3rem;
+  padding: 1.5rem 1rem;
+}
+
+.title {
+  grid-area: title;
+}
+.price {
+  grid-area: price;
+  text-align: end;
+}
+.details {
+  grid-area: details;
+}
+.year {
+  grid-area: year;
+  text-align: end;
+}
