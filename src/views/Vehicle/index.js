@@ -76,6 +76,7 @@ const Vehicle = ({ match }) => {
   const fields = [
     {
       type: "input",
+      fill: true,
       params: {
         placeholder: "Título",
         name: "title",
@@ -101,6 +102,7 @@ const Vehicle = ({ match }) => {
     },
     {
       type: "dropdown",
+      fill: true,
       params: {
         values: brands,
         name: "brand",

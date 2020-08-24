@@ -1,0 +1,9 @@
+.fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 2rem;
+}
+
+.fill-column {
+  grid-column: 1 / 3;
+}
