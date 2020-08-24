@@ -16,7 +16,7 @@ const Vehicle = ({ match }) => {
     brand: "",
     color: "",
     price: undefined,
-    km: undefined,
+    km: undefined
   });
 
   const updateBrands = async () => {

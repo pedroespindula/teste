@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./index.css";
+
 const Action = ({ action }) => {
   return (
     <button className="action" onClick={action.handleClick}>
@@ -10,11 +12,15 @@ const Action = ({ action }) => {
 
 const FormActions = ({ actions, submit }) => {
   return (
-    <div>
-      {actions.map(a => (
-        <Action action={a} key={a.name} />
-      ))}
-      <button className="submit" onClick={submit.handleClick}>{submit.name}</button>
+    <div className="actions">
+      <div>
+        {actions.map(a => (
+          <Action action={a} key={a.name} />
+        ))}
+      </div>
+      <button className="submit" onClick={submit.handleClick}>
+        {submit.name}
+      </button>
     </div>
   );
 };

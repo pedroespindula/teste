@@ -8,7 +8,7 @@
 }
 
 .vehicle--container:hover {
-  background-color: var(--dark-background-color);
+  background-color: var(--light-background-color);
 }
 
 a {

@@ -2,6 +2,8 @@ import React from "react";
 
 import Dropdown from "../../Dropdown";
 
+import './index.css';
+
 const Field = ({ field, setField }) => {
   switch (field.type) {
     case "input":

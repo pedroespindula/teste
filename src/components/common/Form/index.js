@@ -3,6 +3,8 @@ import React from "react";
 import FormFields from "./Field";
 import FormActions from "./Actions";
 
+import './index.css';
+
 const Form = ({ actions, submit, fields, setField }) => {
   return (
     <form onSubmit={(e) => e.preventDefault()}>
