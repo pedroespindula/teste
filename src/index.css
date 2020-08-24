@@ -27,6 +27,14 @@ body {
   outline: none;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 1.2rem;
+}
+
 input:not([type="checkbox"]),
 select,
 option {
@@ -37,12 +45,13 @@ option {
   width: 100%;
 }
 
-button,
 input:not([type="checkbox"]) {
   height: 3.8rem;
+  line-height: 3.8rem;
   border-radius: var(--main-border-radius);
 }
 
+button,
 select {
   border-radius: var(--main-border-radius);
 }
@@ -60,18 +69,15 @@ button,
 input[type="submit"] {
   background-color: #ffffff;
   border: 1px solid #ffffff;
+  padding: 0 2rem;
   cursor: pointer;
   display: inline-block;
-  line-height: 3.8rem;
-  padding: 0 2rem;
   text-align: center;
   white-space: nowrap;
 }
 
 form button {
-  height: 3.2rem;
-  padding: 1rem 1.5rem;
-  margin: 0.5rem;
+  padding: 0.75rem 1.2rem;
 }
 
 form input:not([type="submit"]) {
@@ -88,4 +94,3 @@ form button:not([class="submit"]) {
 form fieldset {
   border: none;
 }
-
